@@ -13,6 +13,48 @@ https://sw.cowtech.it/pinterest-ruby
 
 Pinterest API wrapper.
 
+## Usage
+
+### Basic authorization flow
+
+```ruby
+require "pinterest"
+
+# Create the client
+client = Pinterest::Client.new(client_id: "ID", client_secret: "SECRET")
+
+# Authorization
+url = "https://localhost:3000" # The URL MUST be HTTPS and configured on Pinterest Apps console.
+
+puts client.authorization_url(url) # Send the user to this URL.
+
+# ...
+
+# Start a webserver that will listen on the url above, it will get called with a authorization code in the query string.
+query = request.params[:code]
+
+token = client.fetch_access_token(query) # This token can be saved for later use (see below).
+client.access_token = token
+
+# Play with the API!
+p client.me
+```
+
+### Authenticated flow
+
+```ruby
+require "pinterest"
+
+# Fetch the token saved above
+token = "TOKEN"
+
+# Create the client
+client = Pinterest::Client.new(access_token: token)
+
+# Play with the API!
+p client.me
+```
+
 ## API Documentation
 
 The API documentation can be found [here](https://sw.cowtech.it/pinterest-ruby/docs).

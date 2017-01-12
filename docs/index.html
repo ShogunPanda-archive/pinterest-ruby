@@ -72,6 +72,48 @@
 
 <p>Pinterest API wrapper.</p>
 
+<h2 id="usage">Usage</h2>
+
+<h3 id="basic-authorization-flow">Basic authorization flow</h3>
+
+<p>```ruby
+require “pinterest”</p>
+
+<h1 id="create-the-client">Create the client</h1>
+<p>client = Pinterest::Client.new(client_id: “ID”, client_secret: “SECRET”)</p>
+
+<h1 id="authorization">Authorization</h1>
+<p>url = “https://localhost:3000” # The URL MUST be HTTPS and configured on Pinterest Apps console.</p>
+
+<p>puts client.authorization_url(url) # Send the user to this URL.</p>
+
+<h1 id="section">…</h1>
+
+<h1 id="start-a-webserver-that-will-listen-on-the-url-above-it-will-get-called-with-a-authorization-code-in-the-query-string">Start a webserver that will listen on the url above, it will get called with a authorization code in the query string.</h1>
+<p>query = request.params[:code]</p>
+
+<p>token = client.fetch_access_token(query) # This token can be saved for later use (see below).
+client.access_token = token</p>
+
+<h1 id="play-with-the-api">Play with the API!</h1>
+<p>p client.me
+```</p>
+
+<h3 id="authenticated-flow">Authenticated flow</h3>
+
+<p>```ruby
+require “pinterest”</p>
+
+<h1 id="fetch-the-token-saved-above">Fetch the token saved above</h1>
+<p>token = “TOKEN”</p>
+
+<h1 id="create-the-client-1">Create the client</h1>
+<p>client = Pinterest::Client.new(access_token: token)</p>
+
+<h1 id="play-with-the-api-1">Play with the API!</h1>
+<p>p client.me
+```</p>
+
 <h2 id="api-documentation">API Documentation</h2>
 
 <p>The API documentation can be found <a href="https://sw.cowtech.it/pinterest-ruby/docs">here</a>.</p>
@@ -96,7 +138,7 @@
 </div></div>
 
       <div id="footer">
-  Generated on Thu Jan 12 16:28:12 2017 by
+  Generated on Thu Jan 12 16:36:20 2017 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.7 (ruby-2.3.0).
 </div>
