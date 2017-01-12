@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.pinterest.com/v1/pins/491736853043758927/?fields=id,link,url,creator(id,username,first_name,last_name,bio,created_at,counts,image),board(id,name,url,description,creator(id,username,first_name,last_name,bio,created_at,counts,image),created_at,counts,image),created_at,note,color,counts,media,attribution,image
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.10.1
+      Authorization:
+      - Bearer AVP99QpzwII-f1I2p5gyHi8CiCeQFJkDr8dP-JpDs-LEtAAyegAAAAA
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json
+      Pinterest-Generated-By:
+      - None
+      Pinterest-Version:
+      - d67cb4f
+      X-Content-Type-Options:
+      - nosniff
+      X-Pinterest-Rid:
+      - '120770346720'
+      X-Ratelimit-Limit:
+      - '200'
+      X-Ratelimit-Remaining:
+      - '52'
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Thu, 12 Jan 2017 12:32:05 GMT
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data": {"attribution": null, "creator": {"username": "dderse", "bio":
+        "", "first_name": "Daniel", "last_name": "Derse", "created_at": "2012-09-03T13:21:48",
+        "image": {"60x60": {"url": "https://s-media-cache-ak0.pinimg.com/avatars/dderse_1477012877_60.jpg",
+        "width": 60, "height": 60}}, "counts": {"pins": 23400, "following": 691, "followers":
+        13079, "boards": 37, "likes": 35}, "id": "491736990471948025"}, "url": "https://www.pinterest.com/pin/491736853043758927/",
+        "media": {"type": "image"}, "created_at": "2015-11-13T12:30:13", "note": "Great
+        tip! A really easy way to figure out tricky angles when you''re installing
+        moldings, trim, and baseboards.", "color": "#ffffff", "link": "https://www.pinterest.com/r/pin/491736853043758927/4878490596204882047/cea63543062d06243202ee09a1ae786da38078b5c996f5072a58fc89618443a7",
+        "board": {"description": "", "creator": {"id": "491736990471948025"}, "url":
+        "https://www.pinterest.com/dderse/woodworking/", "created_at": "2012-09-15T14:10:33",
+        "image": {"60x60": {"url": "https://s-media-cache-ak0.pinimg.com/60x60/8f/a3/01/8fa3011c924838a3afe246419486dde3.jpg",
+        "width": 60, "height": 60}}, "counts": {"pins": 3423, "collaborators": 0,
+        "followers": 7618}, "id": "491736921752475493", "name": "Woodworking"}, "image":
+        {"original": {"url": "https://s-media-cache-ak0.pinimg.com/originals/ad/90/47/ad90475f646cb866b31a1dc5c4f754f3.jpg",
+        "width": 480, "height": 1056}}, "counts": {"likes": 2, "comments": 0, "repins":
+        12}, "id": "491736853043758927"}}'
+    http_version: 
+  recorded_at: Thu, 12 Jan 2017 12:32:05 GMT
+recorded_with: VCR 3.0.3

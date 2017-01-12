@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.pinterest.com/v1/me/followers/?fields=username
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.10.1
+      Authorization:
+      - Bearer AVP99QpzwII-f1I2p5gyHi8CiCeQFJkDr8dP-JpDs-LEtAAyegAAAAA
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json
+      Pinterest-Generated-By:
+      - None
+      Pinterest-Version:
+      - d67cb4f
+      X-Content-Type-Options:
+      - nosniff
+      X-Pinterest-Rid:
+      - '827691223235'
+      X-Ratelimit-Limit:
+      - '200'
+      X-Ratelimit-Remaining:
+      - '146'
+      Content-Length:
+      - '564'
+      Date:
+      - Thu, 12 Jan 2017 11:59:40 GMT
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data": [{"username": "ges_si", "id": "332773997374651314"}, {"username":
+        "angelafangelill", "id": "507077376702722075"}, {"username": "paranoidnick",
+        "id": "310326367981972182"}, {"username": "darrellellens", "id": "240872417478576696"},
+        {"username": "mnr39pro", "id": "367536156998373911"}, {"username": "messagerie",
+        "id": "170011092091670380"}, {"username": "BlobAgency", "id": "89720354984956211"},
+        {"username": "dharamgollapudi", "id": "68046781778235617"}, {"username": "wernerbotha17",
+        "id": "388998623972577267"}], "page": {"cursor": null, "next": null}}'
+    http_version: 
+  recorded_at: Thu, 12 Jan 2017 11:59:40 GMT
+recorded_with: VCR 3.0.3

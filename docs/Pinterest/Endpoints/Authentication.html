@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Module: Pinterest::Endpoints::Authentication
+  
+    &mdash; Documentation by YARD 0.9.7
+  
+</title>
+
+  <link rel="stylesheet" href="../../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  pathId = "Pinterest::Endpoints::Authentication";
+  relpath = '../../';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="../../class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="../../_index.html">Index (A)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../../Pinterest.html" title="Pinterest (module)">Pinterest</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../Endpoints.html" title="Pinterest::Endpoints (module)">Endpoints</a></span></span>
+     &raquo; 
+    <span class="title">Authentication</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../../class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Module: Pinterest::Endpoints::Authentication
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+
+  
+  
+  
+  
+  
+
+  
+  <dl>
+    <dt>Included in:</dt>
+    <dd><span class='object_link'><a href="../Client.html" title="Pinterest::Client (class)">Client</a></span></dd>
+  </dl>
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>lib/pinterest/endpoints/authentication.rb</dd>
+  </dl>
+  
+</div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    <p>Authentication related endpoints.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#authorization_state-instance_method" title="#authorization_state (instance method)">#<strong>authorization_state</strong>  &#x21d2; String </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>Returns a state string needed for authorization by the Pinterest API.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#authorization_url-instance_method" title="#authorization_url (instance method)">#<strong>authorization_url</strong>(callback_url = nil, scopes = nil)  &#x21d2; String </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>Returns the URL to start the authentication flow.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#fetch_access_token-instance_method" title="#fetch_access_token (instance method)">#<strong>fetch_access_token</strong>(authorization_token)  &#x21d2; String </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>Fetches the access token.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#verify_access_token-instance_method" title="#verify_access_token (instance method)">#<strong>verify_access_token</strong>  &#x21d2; Hash </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>Verifies the access token.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="authorization_state-instance_method">
+  
+    #<strong>authorization_state</strong>  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>Returns a state string needed for authorization by the Pinterest API.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>The state.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+14
+15
+16</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/pinterest/endpoints/authentication.rb', line 14</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_authorization_state'>authorization_state</span>
+  <span class='ivar'>@state</span> <span class='op'>||=</span> <span class='const'>SecureRandom</span><span class='period'>.</span><span class='id identifier rubyid_hex'>hex</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="authorization_url-instance_method">
+  
+    #<strong>authorization_url</strong>(callback_url = nil, scopes = nil)  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>Returns the URL to start the authentication flow.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>callback_url</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'><p>The callback where to redirect the browser when done.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>scopes</span>
+      
+      
+        <span class='type'>(<tt>Array</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'><p>The list of scopes to ask for. For a list of valid fields, see <code>Pinterest::Client::SCOPES</code>.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>The authorization URL.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/pinterest/endpoints/authentication.rb', line 23</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_authorization_url'>authorization_url</span><span class='lparen'>(</span><span class='id identifier rubyid_callback_url'>callback_url</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_scopes'>scopes</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_ensure_param'>ensure_param</span><span class='lparen'>(</span><span class='id identifier rubyid_client_id'>client_id</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>You must specify the client_id.</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_ensure_param'>ensure_param</span><span class='lparen'>(</span><span class='id identifier rubyid_callback_url'>callback_url</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>You must specify the callback_url.</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_validate_callback_url'>validate_callback_url</span><span class='lparen'>(</span><span class='id identifier rubyid_callback_url'>callback_url</span><span class='rparen'>)</span>
+
+  <span class='comment'># Create the query
+</span>  <span class='id identifier rubyid_query'>query</span> <span class='op'>=</span> <span class='id identifier rubyid_cleanup_params'>cleanup_params</span><span class='lparen'>(</span><span class='lbrace'>{</span>
+    <span class='label'>response_type:</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>code</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='label'>client_id:</span> <span class='id identifier rubyid_client_id'>client_id</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='comma'>,</span> <span class='label'>authorization_state:</span> <span class='id identifier rubyid_authorization_state'>authorization_state</span><span class='comma'>,</span> <span class='label'>redirect_uri:</span> <span class='id identifier rubyid_callback_url'>callback_url</span><span class='comma'>,</span>
+    <span class='label'>scope:</span> <span class='lparen'>(</span><span class='id identifier rubyid_ensure_array'>ensure_array</span><span class='lparen'>(</span><span class='id identifier rubyid_scopes'>scopes</span><span class='comma'>,</span> <span class='op'>::</span><span class='const'><span class='object_link'><a href="../../Pinterest.html" title="Pinterest (module)">Pinterest</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../Client.html" title="Pinterest::Client (class)">Client</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../Client.html#SCOPES-constant" title="Pinterest::Client::SCOPES (constant)">SCOPES</a></span></span><span class='rparen'>)</span> <span class='op'>&amp;</span> <span class='op'>::</span><span class='const'><span class='object_link'><a href="../../Pinterest.html" title="Pinterest (module)">Pinterest</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../Client.html" title="Pinterest::Client (class)">Client</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../Client.html#SCOPES-constant" title="Pinterest::Client::SCOPES (constant)">SCOPES</a></span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_join'>join</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>,</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span> <span class='comment'># Restrict to only valid scopes
+</span>  <span class='rbrace'>}</span><span class='rparen'>)</span>
+
+  <span class='comment'># Create the URL
+</span>  <span class='id identifier rubyid_url'>url</span> <span class='op'>=</span> <span class='const'>Addressable</span><span class='op'>::</span><span class='const'>URI</span><span class='period'>.</span><span class='id identifier rubyid_parse'>parse</span><span class='lparen'>(</span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../Pinterest.html" title="Pinterest (module)">Pinterest</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../Client.html" title="Pinterest::Client (class)">Client</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../Client.html#API_URL-constant" title="Pinterest::Client::API_URL (constant)">API_URL</a></span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>/oauth</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_url'>url</span><span class='period'>.</span><span class='id identifier rubyid_query_values'>query_values</span> <span class='op'>=</span> <span class='id identifier rubyid_query'>query</span>
+  <span class='id identifier rubyid_url'>url</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="fetch_access_token-instance_method">
+  
+    #<strong>fetch_access_token</strong>(authorization_token)  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>Fetches the access token.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>authorization_token</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>The authorization token.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>The authentication token.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/pinterest/endpoints/authentication.rb', line 44</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_fetch_access_token'>fetch_access_token</span><span class='lparen'>(</span><span class='id identifier rubyid_authorization_token'>authorization_token</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_ensure_param'>ensure_param</span><span class='lparen'>(</span><span class='id identifier rubyid_client_id'>client_id</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>You must specify the client_id.</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_ensure_param'>ensure_param</span><span class='lparen'>(</span><span class='id identifier rubyid_client_secret'>client_secret</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>You must specify the client_secret.</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_ensure_param'>ensure_param</span><span class='lparen'>(</span><span class='id identifier rubyid_authorization_token'>authorization_token</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>You must specify the authorization_token.</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+
+  <span class='comment'># Create parameters
+</span>  <span class='id identifier rubyid_query'>query</span> <span class='op'>=</span> <span class='id identifier rubyid_cleanup_params'>cleanup_params</span><span class='lparen'>(</span><span class='lbrace'>{</span>
+    <span class='label'>client_id:</span> <span class='id identifier rubyid_client_id'>client_id</span><span class='comma'>,</span> <span class='label'>client_secret:</span> <span class='id identifier rubyid_client_secret'>client_secret</span><span class='comma'>,</span>
+    <span class='label'>grant_type:</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>authorization_code</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='label'>code:</span> <span class='id identifier rubyid_authorization_token'>authorization_token</span>
+  <span class='rbrace'>}</span><span class='rparen'>)</span>
+
+  <span class='comment'># Perform the request and then get the token
+</span>  <span class='id identifier rubyid_response'>response</span> <span class='op'>=</span> <span class='id identifier rubyid_perform_network_request'>perform_network_request</span><span class='lparen'>(</span><span class='label'>method:</span> <span class='symbol'>:post</span><span class='comma'>,</span> <span class='label'>url:</span> <span class='id identifier rubyid_versioned_url'>versioned_url</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>/oauth/token</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span><span class='comma'>,</span> <span class='label'>query:</span> <span class='id identifier rubyid_query'>query</span><span class='rparen'>)</span>
+  <span class='ivar'>@access_token</span> <span class='op'>=</span> <span class='id identifier rubyid_response'>response</span><span class='period'>.</span><span class='id identifier rubyid_body'>body</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>access_token</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="verify_access_token-instance_method">
+  
+    #<strong>verify_access_token</strong>  &#x21d2; <tt>Hash</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>Verifies the access token.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>The access token informations.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/pinterest/endpoints/authentication.rb', line 63</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_verify_access_token'>verify_access_token</span>
+  <span class='id identifier rubyid_ensure_param'>ensure_param</span><span class='lparen'>(</span><span class='id identifier rubyid_client_id'>client_id</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>You must specify the client_id.</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_ensure_param'>ensure_param</span><span class='lparen'>(</span><span class='id identifier rubyid_access_token'>access_token</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>You must set the access token first.</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+
+  <span class='comment'># Get the data
+</span>  <span class='id identifier rubyid_data'>data</span> <span class='op'>=</span> <span class='id identifier rubyid_perform_network_request'>perform_network_request</span><span class='lparen'>(</span><span class='label'>url:</span> <span class='id identifier rubyid_versioned_url'>versioned_url</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>/oauth/inspect</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span><span class='comma'>,</span> <span class='label'>authenticated:</span> <span class='kw'>true</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_body'>body</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>data</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+
+  <span class='comment'># Prepare for output
+</span>  <span class='id identifier rubyid_create_authentication'>create_authentication</span><span class='lparen'>(</span><span class='id identifier rubyid_data'>data</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Thu Jan 12 16:19:05 2017 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.7 (ruby-2.3.0).
+</div>
+
+    </div>
+  </body>
+</html>

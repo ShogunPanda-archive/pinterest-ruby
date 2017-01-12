@@ -1,0 +1,85 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.pinterest.com/v1/boards/491736921752475493/pins/?cursor=LT40OTE3MzY4NTMwNDk4MzYwNTE6Mnw5ZTRiNmEyOGM5MDMwY2U5MmRkMTNmOWIyMDQyYTIzMjU5NTA2YzAzNTgzY2EwNzlhODBiMzNhOGQwNzg1NTNj&fields=id,link,url,creator(id,username,first_name,last_name,bio,created_at,counts,image),board(id,name,url,description,creator(id,username,first_name,last_name,bio,created_at,counts,image),created_at,counts,image),created_at,note,color,counts,media,attribution,image&limit=2
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.10.1
+      Authorization:
+      - Bearer AVP99QpzwII-f1I2p5gyHi8CiCeQFJkDr8dP-JpDs-LEtAAyegAAAAA
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json
+      Pinterest-Generated-By:
+      - None
+      Pinterest-Version:
+      - d67cb4f
+      X-Content-Type-Options:
+      - nosniff
+      X-Pinterest-Rid:
+      - '760742202826'
+      X-Ratelimit-Limit:
+      - '200'
+      X-Ratelimit-Remaining:
+      - '18'
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Thu, 12 Jan 2017 12:41:32 GMT
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data": [{"attribution": null, "creator": {"username": "dderse", "bio":
+        "", "first_name": "Daniel", "last_name": "Derse", "created_at": "2012-09-03T13:21:48",
+        "image": {"60x60": {"url": "https://s-media-cache-ak0.pinimg.com/avatars/dderse_1477012877_60.jpg",
+        "width": 60, "height": 60}}, "counts": {"pins": 23400, "following": 691, "followers":
+        13078, "boards": 37, "likes": 35}, "id": "491736990471948025"}, "url": "https://www.pinterest.com/pin/491736853049727534/",
+        "media": {"type": "image"}, "created_at": "2016-12-30T05:42:21", "note": "Estante
+        em degraus", "color": "#d4cbb4", "link": "https://www.pinterest.com/r/pin/491736853049727534/4878490596204882047/8b452f01b24cb087344f1c3cf30d4431fceaeba2f3bf09bb117ba69112cdffe8",
+        "board": {"description": "", "creator": {"id": "491736990471948025"}, "url":
+        "https://www.pinterest.com/dderse/woodworking/", "created_at": "2012-09-15T14:10:33",
+        "image": {"60x60": {"url": "https://s-media-cache-ak0.pinimg.com/60x60/8f/a3/01/8fa3011c924838a3afe246419486dde3.jpg",
+        "width": 60, "height": 60}}, "counts": {"pins": 3423, "collaborators": 0,
+        "followers": 7618}, "id": "491736921752475493", "name": "Woodworking"}, "image":
+        {"original": {"url": "https://s-media-cache-ak0.pinimg.com/originals/60/49/62/604962ceb499d8186a645fdd17cfe04b.jpg",
+        "width": 236, "height": 532}}, "counts": {"likes": 1, "comments": 0, "repins":
+        4}, "id": "491736853049727534"}, {"attribution": null, "creator": {"username":
+        "dderse", "bio": "", "first_name": "Daniel", "last_name": "Derse", "created_at":
+        "2012-09-03T13:21:48", "image": {"60x60": {"url": "https://s-media-cache-ak0.pinimg.com/avatars/dderse_1477012877_60.jpg",
+        "width": 60, "height": 60}}, "counts": {"pins": 23400, "following": 691, "followers":
+        13078, "boards": 37, "likes": 35}, "id": "491736990471948025"}, "url": "https://www.pinterest.com/pin/491736853049695203/",
+        "media": {"type": "image"}, "created_at": "2016-12-28T02:13:15", "note": "Build
+        Porch Swing Frame", "color": "#84773d", "link": "https://www.pinterest.com/r/pin/491736853049695203/4878490596204882047/5e2e7b6fc90973f4ac6b6249b99612956e55d0b9be87db4be491c503e3499032",
+        "board": {"description": "", "creator": {"id": "491736990471948025"}, "url":
+        "https://www.pinterest.com/dderse/woodworking/", "created_at": "2012-09-15T14:10:33",
+        "image": {"60x60": {"url": "https://s-media-cache-ak0.pinimg.com/60x60/8f/a3/01/8fa3011c924838a3afe246419486dde3.jpg",
+        "width": 60, "height": 60}}, "counts": {"pins": 3423, "collaborators": 0,
+        "followers": 7618}, "id": "491736921752475493", "name": "Woodworking"}, "image":
+        {"original": {"url": "https://s-media-cache-ak0.pinimg.com/originals/a8/e6/82/a8e68270de7d1042c265231ccd04be65.jpg",
+        "width": 1920, "height": 2560}}, "counts": {"likes": 0, "comments": 0, "repins":
+        5}, "id": "491736853049695203"}], "page": {"cursor": "LT40OTE3MzY4NTMwNDk2OTUyMDM6M3w0ODhmMGRlOGU3ZjlmMGVjNmFhNWI3NTI2OTVkYjI4ZjYyZmM5YmI4N2M3ZGU5ZDY2MWNmYTQ5MzU1MGY4NDM4",
+        "next": "https://api.pinterest.com/v1/boards/491736921752475493/pins/?cursor=LT40OTE3MzY4NTMwNDk2OTUyMDM6M3w0ODhmMGRlOGU3ZjlmMGVjNmFhNWI3NTI2OTVkYjI4ZjYyZmM5YmI4N2M3ZGU5ZDY2MWNmYTQ5MzU1MGY4NDM4&fields=id%2Clink%2Curl%2Ccreator%28id%2Cusername%2Cfirst_name%2Clast_name%2Cbio%2Ccreated_at%2Ccounts%2Cimage%29%2Cboard%28id%2Cname%2Curl%2Cdescription%2Ccreator%28id%2Cusername%2Cfirst_name%2Clast_name%2Cbio%2Ccreated_at%2Ccounts%2Cimage%29%2Ccreated_at%2Ccounts%2Cimage%29%2Ccreated_at%2Cnote%2Ccolor%2Ccounts%2Cmedia%2Cattribution%2Cimage&limit=2"}}'
+    http_version: 
+  recorded_at: Thu, 12 Jan 2017 12:41:32 GMT
+recorded_with: VCR 3.0.3

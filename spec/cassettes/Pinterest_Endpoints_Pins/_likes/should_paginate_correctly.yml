@@ -1,0 +1,87 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.pinterest.com/v1/me/likes/?cursor=LT41MjcyNzMwNjg4NTkwMDQwMTA6MnxmYWJkMDlhOGI4MmQ3ZTJmNGZhM2ZjMTQ2Y2UwOTdkZTI2ZTA1NmRjYzZhZWQ3NTJlODFhNjBmNThhYzEwNjkw&fields=id,link,url,creator(id,username,first_name,last_name,bio,created_at,counts,image),board(id,name,url,description,creator(id,username,first_name,last_name,bio,created_at,counts,image),created_at,counts,image),created_at,note,color,counts,media,attribution,image&limit=2
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.10.1
+      Authorization:
+      - Bearer AVP99QpzwII-f1I2p5gyHi8CiCeQFJkDr8dP-JpDs-LEtAAyegAAAAA
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json
+      Pinterest-Generated-By:
+      - None
+      Pinterest-Version:
+      - d67cb4f
+      X-Content-Type-Options:
+      - nosniff
+      X-Pinterest-Rid:
+      - '288283026869'
+      X-Ratelimit-Limit:
+      - '200'
+      X-Ratelimit-Remaining:
+      - '19'
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Thu, 12 Jan 2017 12:40:11 GMT
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data": [{"attribution": null, "creator": {"username": "nikkiroselee",
+        "bio": "Visual designer & costume maker", "first_name": "Nikki", "last_name":
+        "Lee", "created_at": "2011-06-04T00:57:31", "image": {"60x60": {"url": "https://s-media-cache-ak0.pinimg.com/avatars/nikkiroselee_1464369522_60.jpg",
+        "width": 60, "height": 60}}, "counts": {"pins": 24221, "following": 274, "followers":
+        1928, "boards": 123, "likes": 273}, "id": "115053102888910923"}, "url": "https://www.pinterest.com/pin/115052965460744443/",
+        "media": {"type": "image"}, "created_at": "2016-12-30T00:10:44", "note": "siberian
+        cat", "color": "#ffffff", "link": "https://www.pinterest.com/r/pin/115052965460744443/4878490596204882047/b968e1eecc6af710eda70a9c71253b230d7d68ac9da220389ea7faed1d2038af",
+        "board": {"description": "", "creator": {"id": "115053102888910923"}, "url":
+        "https://www.pinterest.com/nikkiroselee/fauna/", "created_at": "2011-06-04T20:35:18",
+        "image": {"60x60": {"url": "https://s-media-cache-ak0.pinimg.com/custom_covers/60x60/115053034169435010_1401674506.jpg",
+        "width": 60, "height": 60}}, "counts": {"pins": 787, "collaborators": 0, "followers":
+        223}, "id": "115053034169435010", "name": "Fauna"}, "image": {"original":
+        {"url": "https://s-media-cache-ak0.pinimg.com/originals/72/cb/23/72cb2312b6818b97c738bac6e8eb0f29.jpg",
+        "width": 460, "height": 290}}, "counts": {"likes": 1, "comments": 0, "repins":
+        0}, "id": "115052965460744443"}, {"attribution": null, "creator": {"username":
+        "aranzacarlos", "bio": "", "first_name": "aranza", "last_name": "Carlos",
+        "created_at": "2015-10-21T00:35:05", "image": {"60x60": {"url": "https://s.pinimg.com/images/user/default_60.png",
+        "width": 60, "height": 60}}, "counts": {"pins": 306, "following": 2, "followers":
+        9, "boards": 19, "likes": 4}, "id": "30118028666498961"}, "url": "https://www.pinterest.com/pin/30117891236548210/",
+        "media": {"type": "image"}, "created_at": "2016-02-09T04:15:32", "note": "Panda-
+        \u00bfPor que est\u00e1n al rev\u00e9s?  Humanos- No, tu estas al rev\u00e9s
+        Panda- No ustedes est\u00e1n al rev\u00e9s Humanos- *.* :3 Si panda lo que
+        digas", "color": "#716c52", "link": "https://www.pinterest.com/r/pin/30117891236548210/4878490596204882047/a19cf7d2c7615373b52a261ea074d145ad80fe728c82ea61d03538458c9f94bd",
+        "board": {"description": "", "creator": {"id": "30118028666498961"}, "url":
+        "https://www.pinterest.com/aranzacarlos/pandas/", "created_at": "2016-02-09T04:14:37",
+        "image": {"60x60": {"url": "https://s-media-cache-ak0.pinimg.com/60x60/64/52/ae/6452ae3104b22cbc574cb6e962a98553.jpg",
+        "width": 60, "height": 60}}, "counts": {"pins": 6, "collaborators": 0, "followers":
+        3}, "id": "30117959947196679", "name": "pandas"}, "image": {"original": {"url":
+        "https://s-media-cache-ak0.pinimg.com/originals/8a/71/a9/8a71a903126336ecf784ef6f66078c49.jpg",
+        "width": 378, "height": 600}}, "counts": {"likes": 120, "comments": 0, "repins":
+        495}, "id": "30117891236548210"}], "page": {"cursor": "LT4zMDExNzg5MTIzNjU0ODIxMDozfGE3ZGIxMTkzZDNjOTU0M2RhYjUyMmIwYzE0OWIwMTQxZmRiZTUwNGZmYzMyYzU1ZTRhM2Q1OWYyYzNjOGM2NjU=",
+        "next": "https://api.pinterest.com/v1/me/likes/?cursor=LT4zMDExNzg5MTIzNjU0ODIxMDozfGE3ZGIxMTkzZDNjOTU0M2RhYjUyMmIwYzE0OWIwMTQxZmRiZTUwNGZmYzMyYzU1ZTRhM2Q1OWYyYzNjOGM2NjU%3D&fields=id%2Clink%2Curl%2Ccreator%28id%2Cusername%2Cfirst_name%2Clast_name%2Cbio%2Ccreated_at%2Ccounts%2Cimage%29%2Cboard%28id%2Cname%2Curl%2Cdescription%2Ccreator%28id%2Cusername%2Cfirst_name%2Clast_name%2Cbio%2Ccreated_at%2Ccounts%2Cimage%29%2Ccreated_at%2Ccounts%2Cimage%29%2Ccreated_at%2Cnote%2Ccolor%2Ccounts%2Cmedia%2Cattribution%2Cimage&limit=2"}}'
+    http_version: 
+  recorded_at: Thu, 12 Jan 2017 12:40:11 GMT
+recorded_with: VCR 3.0.3

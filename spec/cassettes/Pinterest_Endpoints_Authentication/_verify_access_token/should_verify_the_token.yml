@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.pinterest.com/v1/oauth/inspect
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.10.1
+      Authorization:
+      - Bearer AVP99QpzwII-f1I2p5gyHi8CiCeQFJkDr8dP-JpDs-LEtAAyegAAAAA
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json
+      Pinterest-Generated-By:
+      - None
+      Pinterest-Version:
+      - d67cb4f
+      X-Content-Type-Options:
+      - nosniff
+      X-Pinterest-Rid:
+      - '441010344100'
+      X-Ratelimit-Limit:
+      - '200'
+      X-Ratelimit-Remaining:
+      - '197'
+      Content-Length:
+      - '251'
+      Date:
+      - Thu, 12 Jan 2017 11:46:46 GMT
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data": {"issued_at": "2017-01-12T11:44:40", "scopes": ["read_public",
+        "write_public", "read_relationships", "write_relationships"], "app": {"state":
+        "UNKNOWN", "id": 4878490596204882047, "name": "Pinterest Ruby Gem"}, "user_id":
+        559853934835925315}}'
+    http_version: 
+  recorded_at: Thu, 12 Jan 2017 11:46:46 GMT
+recorded_with: VCR 3.0.3

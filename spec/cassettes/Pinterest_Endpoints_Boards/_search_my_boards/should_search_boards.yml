@@ -1,0 +1,75 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.pinterest.com/v1/me/search/boards/?fields=id,name,url,description,creator(id,username,first_name,last_name,bio,created_at,counts,image),created_at,counts,image&limit=2&query=foo
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.10.1
+      Authorization:
+      - Bearer AVP99QpzwII-f1I2p5gyHi8CiCeQFJkDr8dP-JpDs-LEtAAyegAAAAA
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json
+      Pinterest-Generated-By:
+      - None
+      Pinterest-Version:
+      - d67cb4f
+      X-Content-Type-Options:
+      - nosniff
+      X-Pinterest-Rid:
+      - '860748235875'
+      X-Ratelimit-Limit:
+      - '200'
+      X-Ratelimit-Remaining:
+      - '90'
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Thu, 12 Jan 2017 12:20:30 GMT
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data": [{"description": "", "creator": {"username": "shogunpanda",
+        "bio": "Senior developer in Ruby on Rails, jQuery, HTML5, CSS3, BootStrap,
+        Backbone.JS and others. LARV addicted and nerd on many things. From Molise,
+        Italy.", "first_name": "Paolo", "last_name": "Insogna", "created_at": "2012-08-12T06:28:34",
+        "image": {"60x60": {"url": "https://s-media-cache-ak0.pinimg.com/avatars/shogunpanda_1344752914_60.jpg",
+        "width": 60, "height": 60}}, "counts": {"pins": 46, "following": 8, "followers":
+        9, "boards": 5, "likes": 1}, "id": "559853934835925315"}, "url": "https://www.pinterest.com/shogunpanda/foo-3/",
+        "created_at": "2017-01-12T12:17:20", "image": {"60x60": {"url": null, "width":
+        60, "height": 60}}, "counts": {"pins": 0, "collaborators": 0, "followers":
+        8}, "id": "559853866116962373", "name": "Foo 3"}, {"description": "", "creator":
+        {"username": "shogunpanda", "bio": "Senior developer in Ruby on Rails, jQuery,
+        HTML5, CSS3, BootStrap, Backbone.JS and others. LARV addicted and nerd on
+        many things. From Molise, Italy.", "first_name": "Paolo", "last_name": "Insogna",
+        "created_at": "2012-08-12T06:28:34", "image": {"60x60": {"url": "https://s-media-cache-ak0.pinimg.com/avatars/shogunpanda_1344752914_60.jpg",
+        "width": 60, "height": 60}}, "counts": {"pins": 46, "following": 8, "followers":
+        9, "boards": 5, "likes": 1}, "id": "559853934835925315"}, "url": "https://www.pinterest.com/shogunpanda/foo-2/",
+        "created_at": "2017-01-12T12:17:40", "image": {"60x60": {"url": null, "width":
+        60, "height": 60}}, "counts": {"pins": 0, "collaborators": 0, "followers":
+        8}, "id": "559853866116962374", "name": "Foo 2"}], "page": {"cursor": "b28yfGNhZGY0ZDM1MjlhNjEwNGYzZTAxYTVjNDlkYjE4MDk2MDczNDMyNTc4ZjYyYmM3Zjg3NWU0ZjA1NDYzYTAyMmE=",
+        "next": "https://api.pinterest.com/v1/me/search/boards/?cursor=b28yfGNhZGY0ZDM1MjlhNjEwNGYzZTAxYTVjNDlkYjE4MDk2MDczNDMyNTc4ZjYyYmM3Zjg3NWU0ZjA1NDYzYTAyMmE%3D&fields=id%2Cname%2Curl%2Cdescription%2Ccreator%28id%2Cusername%2Cfirst_name%2Clast_name%2Cbio%2Ccreated_at%2Ccounts%2Cimage%29%2Ccreated_at%2Ccounts%2Cimage&limit=2&query=foo"}}'
+    http_version: 
+  recorded_at: Thu, 12 Jan 2017 12:20:30 GMT
+recorded_with: VCR 3.0.3

@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.pinterest.com/v1/oauth/token?client_id=4878490596204882047&client_secret=aaa4922dadd0a08b0d767df5263e2e8987f88faa16c4079e17c10c0447c0fce0&code=9568cec6cc78aa05&grant_type=authorization_code
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.10.1
+      Authorization:
+      - Bearer
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json
+      Pinterest-Generated-By:
+      - None
+      Pinterest-Version:
+      - d67cb4f
+      X-Content-Type-Options:
+      - nosniff
+      X-Pinterest-Rid:
+      - '694685527117'
+      X-Ratelimit-Limit:
+      - '500'
+      X-Ratelimit-Remaining:
+      - '496'
+      Content-Length:
+      - '237'
+      Date:
+      - Thu, 12 Jan 2017 11:46:45 GMT
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"access_token": "AVP99QpzwII-f1I2p5gyHi8CiCeQFJkDr8dP-JpDs-LEtAAyegAAAAA",
+        "token_type": "bearer", "scope": ["read_public", "write_public", "read_private",
+        "write_private", "read_relationships", "write_relationships", "read_write_all"]}'
+    http_version: 
+  recorded_at: Thu, 12 Jan 2017 11:46:45 GMT
+recorded_with: VCR 3.0.3

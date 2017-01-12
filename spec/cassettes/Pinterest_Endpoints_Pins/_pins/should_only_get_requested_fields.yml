@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.pinterest.com/v1/me/pins/?fields=url&limit=2
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.10.1
+      Authorization:
+      - Bearer AVP99QpzwII-f1I2p5gyHi8CiCeQFJkDr8dP-JpDs-LEtAAyegAAAAA
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json
+      Pinterest-Generated-By:
+      - None
+      Pinterest-Version:
+      - d67cb4f
+      X-Content-Type-Options:
+      - nosniff
+      X-Pinterest-Rid:
+      - '305409681950'
+      X-Ratelimit-Limit:
+      - '200'
+      X-Ratelimit-Remaining:
+      - '44'
+      Content-Length:
+      - '522'
+      Date:
+      - Thu, 12 Jan 2017 12:32:28 GMT
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data": [{"url": "https://www.pinterest.com/pin/559853797412741158/",
+        "id": "559853797412741158"}, {"url": "https://www.pinterest.com/pin/559853797412741157/",
+        "id": "559853797412741157"}], "page": {"cursor": "LT41NTk4NTM3OTc0MTI3NDExNTc6MnxhYzA2ZDAwYjI4NDhjNTVhMDMxMDU5NWNlODFmOTg5MzIzZmVlNmQ1MDdiZjIxNjY0NDgwYjVkZWZkYjEwNTg3",
+        "next": "https://api.pinterest.com/v1/me/pins/?cursor=LT41NTk4NTM3OTc0MTI3NDExNTc6MnxhYzA2ZDAwYjI4NDhjNTVhMDMxMDU5NWNlODFmOTg5MzIzZmVlNmQ1MDdiZjIxNjY0NDgwYjVkZWZkYjEwNTg3&fields=url&limit=2"}}'
+    http_version: 
+  recorded_at: Thu, 12 Jan 2017 12:32:28 GMT
+recorded_with: VCR 3.0.3

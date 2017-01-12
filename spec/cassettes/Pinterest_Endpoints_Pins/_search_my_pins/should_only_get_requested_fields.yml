@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.pinterest.com/v1/me/search/pins/?fields=url&limit=50&query=kitten
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.10.1
+      Authorization:
+      - Bearer AVP99QpzwII-f1I2p5gyHi8CiCeQFJkDr8dP-JpDs-LEtAAyegAAAAA
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json
+      Pinterest-Generated-By:
+      - None
+      Pinterest-Version:
+      - d67cb4f
+      X-Content-Type-Options:
+      - nosniff
+      X-Pinterest-Rid:
+      - '666754272105'
+      X-Ratelimit-Limit:
+      - '200'
+      X-Ratelimit-Remaining:
+      - '29'
+      Content-Length:
+      - '675'
+      Date:
+      - Thu, 12 Jan 2017 12:37:45 GMT
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data": [{"url": "https://www.pinterest.com/pin/559853797412741184/",
+        "id": "559853797412741184"}, {"url": "https://www.pinterest.com/pin/559853797398582958/",
+        "id": "559853797398582958"}, {"url": "https://www.pinterest.com/pin/559853797398871450/",
+        "id": "559853797398871450"}, {"url": "https://www.pinterest.com/pin/559853797398582912/",
+        "id": "559853797398582912"}], "page": {"cursor": "b281MHw4ODgyNzJiYWQxN2E0NmM2MTNlNjNkYjY1Y2E4ZDY2OTI4ODZkMzBiNGEyNjU4ZGMyODFmMzhhOTUzZjE2NTRm",
+        "next": "https://api.pinterest.com/v1/me/search/pins/?cursor=b281MHw4ODgyNzJiYWQxN2E0NmM2MTNlNjNkYjY1Y2E4ZDY2OTI4ODZkMzBiNGEyNjU4ZGMyODFmMzhhOTUzZjE2NTRm&fields=url&limit=50&query=kitten"}}'
+    http_version: 
+  recorded_at: Thu, 12 Jan 2017 12:37:45 GMT
+recorded_with: VCR 3.0.3

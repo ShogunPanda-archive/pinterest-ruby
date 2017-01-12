@@ -1,0 +1,74 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.pinterest.com/v1/me/boards/?fields=id,name,url,description,creator(id,username,first_name,last_name,bio,created_at,counts,image),created_at,counts,image
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.10.1
+      Authorization:
+      - Bearer AVP99QpzwII-f1I2p5gyHi8CiCeQFJkDr8dP-JpDs-LEtAAyegAAAAA
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json
+      Pinterest-Generated-By:
+      - None
+      Pinterest-Version:
+      - d67cb4f
+      X-Content-Type-Options:
+      - nosniff
+      X-Pinterest-Rid:
+      - '468839482991'
+      X-Ratelimit-Limit:
+      - '200'
+      X-Ratelimit-Remaining:
+      - '123'
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Thu, 12 Jan 2017 12:13:20 GMT
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data": [{"description": "The most stupid things by 9GAG.", "creator":
+        {"username": "shogunpanda", "bio": "Senior developer in Ruby on Rails, jQuery,
+        HTML5, CSS3, BootStrap, Backbone.JS and others. LARV addicted and nerd on
+        many things. From Molise, Italy.", "first_name": "Paolo", "last_name": "Insogna",
+        "created_at": "2012-08-12T06:28:34", "image": {"60x60": {"url": "https://s-media-cache-ak0.pinimg.com/avatars/shogunpanda_1344752914_60.jpg",
+        "width": 60, "height": 60}}, "counts": {"pins": 46, "following": 8, "followers":
+        9, "boards": 2, "likes": 1}, "id": "559853934835925315"}, "url": "https://www.pinterest.com/shogunpanda/9gag/",
+        "created_at": "2013-09-02T16:44:49", "image": {"60x60": {"url": "https://s-media-cache-ak0.pinimg.com/60x60/86/28/87/862887a3bfdd437a0b898571485ff570.jpg",
+        "width": 60, "height": 60}}, "counts": {"pins": 44, "collaborators": 0, "followers":
+        9}, "id": "559853866116513386", "name": "9GAG"}, {"description": "", "creator":
+        {"username": "shogunpanda", "bio": "Senior developer in Ruby on Rails, jQuery,
+        HTML5, CSS3, BootStrap, Backbone.JS and others. LARV addicted and nerd on
+        many things. From Molise, Italy.", "first_name": "Paolo", "last_name": "Insogna",
+        "created_at": "2012-08-12T06:28:34", "image": {"60x60": {"url": "https://s-media-cache-ak0.pinimg.com/avatars/shogunpanda_1344752914_60.jpg",
+        "width": 60, "height": 60}}, "counts": {"pins": 46, "following": 8, "followers":
+        9, "boards": 2, "likes": 1}, "id": "559853934835925315"}, "url": "https://www.pinterest.com/shogunpanda/social-web/",
+        "created_at": "2013-02-03T19:10:48", "image": {"60x60": {"url": "https://s-media-cache-ak0.pinimg.com/60x60/3e/57/7c/3e577c0491d28a0cd5c662ca1ed5a203.jpg",
+        "width": 60, "height": 60}}, "counts": {"pins": 2, "collaborators": 0, "followers":
+        8}, "id": "559853866116479541", "name": "Social & Web"}]}'
+    http_version: 
+  recorded_at: Thu, 12 Jan 2017 12:13:20 GMT
+recorded_with: VCR 3.0.3

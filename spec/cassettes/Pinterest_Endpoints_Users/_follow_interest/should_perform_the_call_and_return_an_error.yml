@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.pinterest.com/v1/me/following/interests/?interest=905661505034
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.10.1
+      Authorization:
+      - Bearer AVP99QpzwII-f1I2p5gyHi8CiCeQFJkDr8dP-JpDs-LEtAAyegAAAAA
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 405
+      message: METHOD NOT ALLOWED
+    headers:
+      Age:
+      - '0'
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json
+      X-Pinterest-Rid:
+      - '825180006610'
+      Content-Length:
+      - '60'
+      Date:
+      - Thu, 12 Jan 2017 11:59:44 GMT
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "message": "405: Method Not Allowed",
+          "type": "http"
+        }
+    http_version: 
+  recorded_at: Thu, 12 Jan 2017 11:59:44 GMT
+recorded_with: VCR 3.0.3

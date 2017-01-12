@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.pinterest.com/v1/pins/?fields=id,link,url,creator(id,username,first_name,last_name,bio,created_at,counts,image),board(id,name,url,description,creator(id,username,first_name,last_name,bio,created_at,counts,image),created_at,counts,image),created_at,note,color,counts,media,attribution,image
+    body:
+      encoding: UTF-8
+      string: board=shogunpanda%2Ffoo-1&image_url=http%3A%2F%2Fplacehold.it%2F300x300.png&link&note
+    headers:
+      User-Agent:
+      - Faraday v0.10.1
+      Authorization:
+      - Bearer AVP99QpzwII-f1I2p5gyHi8CiCeQFJkDr8dP-JpDs-LEtAAyegAAAAA
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: CREATED
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json
+      Pinterest-Generated-By:
+      - None
+      Pinterest-Version:
+      - d67cb4f
+      X-Content-Type-Options:
+      - nosniff
+      X-Pinterest-Rid:
+      - '226067013816'
+      X-Ratelimit-Limit:
+      - '200'
+      X-Ratelimit-Remaining:
+      - '55'
+      Content-Length:
+      - '1290'
+      Date:
+      - Thu, 12 Jan 2017 12:31:38 GMT
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data": {"attribution": null, "creator": {"username": "shogunpanda",
+        "bio": "Senior developer in Ruby on Rails, jQuery, HTML5, CSS3, BootStrap,
+        Backbone.JS and others. LARV addicted and nerd on many things. From Molise,
+        Italy.", "first_name": "Paolo", "last_name": "Insogna", "created_at": "2012-08-12T06:28:34",
+        "image": {"60x60": {"url": "https://s-media-cache-ak0.pinimg.com/avatars/shogunpanda_1344752914_60.jpg",
+        "width": 60, "height": 60}}, "counts": {"pins": 46, "following": 11, "followers":
+        9, "boards": 5, "likes": 1}, "id": "559853934835925315"}, "url": "https://www.pinterest.com/pin/559853797412741156/",
+        "media": {"type": "image"}, "created_at": "2017-01-12T12:31:37", "note": "
+        ", "color": null, "link": "", "board": {"description": "", "creator": {"id":
+        "559853934835925315"}, "url": "https://www.pinterest.com/shogunpanda/foo-1/",
+        "created_at": "2017-01-12T12:20:18", "image": {"60x60": {"url": null, "width":
+        60, "height": 60}}, "counts": {"pins": 0, "collaborators": 0, "followers":
+        8}, "id": "559853866116962376", "name": "Foo 1"}, "image": {"original": {"url":
+        "https://s-media-cache-ak0.pinimg.com/originals/9c/d5/4e/9cd54e9983ce9232c2cfe556b04b7e94.png",
+        "width": 300, "height": 300}}, "counts": {"likes": 0, "comments": 0, "repins":
+        0}, "id": "559853797412741156"}}'
+    http_version: 
+  recorded_at: Thu, 12 Jan 2017 12:31:38 GMT
+recorded_with: VCR 3.0.3

@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.pinterest.com/v1/me/following/users/?fields=username
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.10.1
+      Authorization:
+      - Bearer AVP99QpzwII-f1I2p5gyHi8CiCeQFJkDr8dP-JpDs-LEtAAyegAAAAA
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json
+      Pinterest-Generated-By:
+      - None
+      Pinterest-Version:
+      - d67cb4f
+      X-Content-Type-Options:
+      - nosniff
+      X-Pinterest-Rid:
+      - '267210714422'
+      X-Ratelimit-Limit:
+      - '200'
+      X-Ratelimit-Remaining:
+      - '142'
+      Content-Length:
+      - '501'
+      Date:
+      - Thu, 12 Jan 2017 11:59:41 GMT
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data": [{"username": "rajkadam", "id": "165929704929366893"}, {"username":
+        "dharamgollapudi", "id": "68046781778235617"}, {"username": "eileenrene11",
+        "id": "82894586799721237"}, {"username": "georgebalayan", "id": "275775314590698487"},
+        {"username": "photobucket", "id": "67272725592280910"}, {"username": "kettco",
+        "id": "1477949786161283"}, {"username": "vishalsankhla", "id": "80994630706925671"},
+        {"username": "aranzacarlos", "id": "30118028666498961"}], "page": {"cursor":
+        null, "next": null}}'
+    http_version: 
+  recorded_at: Thu, 12 Jan 2017 11:59:42 GMT
+recorded_with: VCR 3.0.3

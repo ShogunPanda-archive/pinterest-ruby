@@ -1,0 +1,88 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.pinterest.com/v1/me/pins/?fields=id,link,url,creator(id,username,first_name,last_name,bio,created_at,counts,image),board(id,name,url,description,creator(id,username,first_name,last_name,bio,created_at,counts,image),created_at,counts,image),created_at,note,color,counts,media,attribution,image&limit=2
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.10.1
+      Authorization:
+      - Bearer AVP99QpzwII-f1I2p5gyHi8CiCeQFJkDr8dP-JpDs-LEtAAyegAAAAA
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json
+      Pinterest-Generated-By:
+      - None
+      Pinterest-Version:
+      - d67cb4f
+      X-Content-Type-Options:
+      - nosniff
+      X-Pinterest-Rid:
+      - '595228396072'
+      X-Ratelimit-Limit:
+      - '200'
+      X-Ratelimit-Remaining:
+      - '46'
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Thu, 12 Jan 2017 12:32:27 GMT
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data": [{"attribution": null, "creator": {"username": "shogunpanda",
+        "bio": "Senior developer in Ruby on Rails, jQuery, HTML5, CSS3, BootStrap,
+        Backbone.JS and others. LARV addicted and nerd on many things. From Molise,
+        Italy.", "first_name": "Paolo", "last_name": "Insogna", "created_at": "2012-08-12T06:28:34",
+        "image": {"60x60": {"url": "https://s-media-cache-ak0.pinimg.com/avatars/shogunpanda_1344752914_60.jpg",
+        "width": 60, "height": 60}}, "counts": {"pins": 49, "following": 11, "followers":
+        9, "boards": 5, "likes": 1}, "id": "559853934835925315"}, "url": "https://www.pinterest.com/pin/559853797412741158/",
+        "media": {"type": "image"}, "created_at": "2017-01-12T12:31:39", "note": "NOTE",
+        "color": "#cccccc", "link": "https://www.pinterest.com/r/pin/559853797412741158/4878490596204882047/320b1a280f91518c68ae4f9d942041b74c56120f4628896f9685e5731dc2f0e3",
+        "board": {"description": "", "creator": {"id": "559853934835925315"}, "url":
+        "https://www.pinterest.com/shogunpanda/foo-1/", "created_at": "2017-01-12T12:20:18",
+        "image": {"60x60": {"url": "https://s-media-cache-ak0.pinimg.com/60x60/9c/d5/4e/9cd54e9983ce9232c2cfe556b04b7e94.jpg",
+        "width": 60, "height": 60}}, "counts": {"pins": 3, "collaborators": 0, "followers":
+        8}, "id": "559853866116962376", "name": "Foo 1"}, "image": {"original": {"url":
+        "https://s-media-cache-ak0.pinimg.com/originals/9c/d5/4e/9cd54e9983ce9232c2cfe556b04b7e94.png",
+        "width": 300, "height": 300}}, "counts": {"likes": 0, "comments": 0, "repins":
+        0}, "id": "559853797412741158"}, {"attribution": null, "creator": {"username":
+        "shogunpanda", "bio": "Senior developer in Ruby on Rails, jQuery, HTML5, CSS3,
+        BootStrap, Backbone.JS and others. LARV addicted and nerd on many things.
+        From Molise, Italy.", "first_name": "Paolo", "last_name": "Insogna", "created_at":
+        "2012-08-12T06:28:34", "image": {"60x60": {"url": "https://s-media-cache-ak0.pinimg.com/avatars/shogunpanda_1344752914_60.jpg",
+        "width": 60, "height": 60}}, "counts": {"pins": 49, "following": 11, "followers":
+        9, "boards": 5, "likes": 1}, "id": "559853934835925315"}, "url": "https://www.pinterest.com/pin/559853797412741157/",
+        "media": {"type": "image"}, "created_at": "2017-01-12T12:31:38", "note": "
+        ", "color": "#869455", "link": "", "board": {"description": "", "creator":
+        {"id": "559853934835925315"}, "url": "https://www.pinterest.com/shogunpanda/foo-1/",
+        "created_at": "2017-01-12T12:20:18", "image": {"60x60": {"url": "https://s-media-cache-ak0.pinimg.com/60x60/9c/d5/4e/9cd54e9983ce9232c2cfe556b04b7e94.jpg",
+        "width": 60, "height": 60}}, "counts": {"pins": 3, "collaborators": 0, "followers":
+        8}, "id": "559853866116962376", "name": "Foo 1"}, "image": {"original": {"url":
+        "https://s-media-cache-ak0.pinimg.com/originals/fb/06/4d/fb064d75e66a46a7daa03b9a609c79d8.jpg",
+        "width": 615, "height": 410}}, "counts": {"likes": 0, "comments": 0, "repins":
+        0}, "id": "559853797412741157"}], "page": {"cursor": "LT41NTk4NTM3OTc0MTI3NDExNTc6MnxhYzA2ZDAwYjI4NDhjNTVhMDMxMDU5NWNlODFmOTg5MzIzZmVlNmQ1MDdiZjIxNjY0NDgwYjVkZWZkYjEwNTg3",
+        "next": "https://api.pinterest.com/v1/me/pins/?cursor=LT41NTk4NTM3OTc0MTI3NDExNTc6MnxhYzA2ZDAwYjI4NDhjNTVhMDMxMDU5NWNlODFmOTg5MzIzZmVlNmQ1MDdiZjIxNjY0NDgwYjVkZWZkYjEwNTg3&fields=id%2Clink%2Curl%2Ccreator%28id%2Cusername%2Cfirst_name%2Clast_name%2Cbio%2Ccreated_at%2Ccounts%2Cimage%29%2Cboard%28id%2Cname%2Curl%2Cdescription%2Ccreator%28id%2Cusername%2Cfirst_name%2Clast_name%2Cbio%2Ccreated_at%2Ccounts%2Cimage%29%2Ccreated_at%2Ccounts%2Cimage%29%2Ccreated_at%2Cnote%2Ccolor%2Ccounts%2Cmedia%2Cattribution%2Cimage&limit=2"}}'
+    http_version: 
+  recorded_at: Thu, 12 Jan 2017 12:32:27 GMT
+recorded_with: VCR 3.0.3

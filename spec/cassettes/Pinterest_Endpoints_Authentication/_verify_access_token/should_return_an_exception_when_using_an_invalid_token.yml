@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.pinterest.com/v1/oauth/inspect
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.10.1
+      Authorization:
+      - Bearer A
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 401
+      message: UNAUTHORIZED
+    headers:
+      Age:
+      - '0'
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json
+      Pinterest-Generated-By:
+      - devplatform-devapi-prod-0a01c01e
+      Pinterest-Version:
+      - d67cb4f
+      X-Content-Type-Options:
+      - nosniff
+      X-Pinterest-Rid:
+      - '308104637921'
+      Content-Length:
+      - '177'
+      Date:
+      - Thu, 12 Jan 2017 11:46:46 GMT
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"status": "failure", "code": 3, "host": "devplatform-devapi-prod-0a01c01e",
+        "generated_at": "Thu, 12 Jan 2017 11:46:46 +0000", "message": "Authorization
+        failed.", "data": null}'
+    http_version: 
+  recorded_at: Thu, 12 Jan 2017 11:46:46 GMT
+recorded_with: VCR 3.0.3

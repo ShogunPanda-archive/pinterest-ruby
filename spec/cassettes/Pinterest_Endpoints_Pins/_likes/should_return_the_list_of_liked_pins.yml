@@ -1,0 +1,85 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.pinterest.com/v1/me/likes/?fields=id,link,url,creator(id,username,first_name,last_name,bio,created_at,counts,image),board(id,name,url,description,creator(id,username,first_name,last_name,bio,created_at,counts,image),created_at,counts,image),created_at,note,color,counts,media,attribution,image&limit=2
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.10.1
+      Authorization:
+      - Bearer AVP99QpzwII-f1I2p5gyHi8CiCeQFJkDr8dP-JpDs-LEtAAyegAAAAA
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json
+      Pinterest-Generated-By:
+      - None
+      Pinterest-Version:
+      - d67cb4f
+      X-Content-Type-Options:
+      - nosniff
+      X-Pinterest-Rid:
+      - '251246324695'
+      X-Ratelimit-Limit:
+      - '200'
+      X-Ratelimit-Remaining:
+      - '22'
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Thu, 12 Jan 2017 12:39:16 GMT
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data": [{"attribution": null, "creator": {"username": "StarsWithDark",
+        "bio": "", "first_name": "stars cant shine without darkness", "last_name":
+        "", "created_at": "2014-03-25T23:50:17", "image": {"60x60": {"url": "https://s-media-cache-ak0.pinimg.com/avatars/Canandwillitbe-1419569800_60.jpg",
+        "width": 60, "height": 60}}, "counts": {"pins": 5529, "following": 85, "followers":
+        72, "boards": 129, "likes": 229}, "id": "414049896899828912"}, "url": "https://www.pinterest.com/pin/414049759476182583/",
+        "media": {"type": "image"}, "created_at": "2016-11-22T20:32:35", "note": "best-kitten-names-1.jpg
+        (680\u00d7411)", "color": "#dbccc2", "link": "https://www.pinterest.com/r/pin/414049759476182583/4878490596204882047/0b7f1e47d36251e180a3d28a12c0ba81a9154b8ca86f7419592074b84465e218",
+        "board": {"description": "", "creator": {"id": "414049896899828912"}, "url":
+        "https://www.pinterest.com/StarsWithDark/cute/", "created_at": "2015-01-02T21:57:59",
+        "image": {"60x60": {"url": "https://s-media-cache-ak0.pinimg.com/60x60/b8/42/49/b84249252a60c2a4409cdf46ae2d1aa8.jpg",
+        "width": 60, "height": 60}}, "counts": {"pins": 499, "collaborators": 0, "followers":
+        31}, "id": "414049828180580242", "name": "cute"}, "image": {"original": {"url":
+        "https://s-media-cache-ak0.pinimg.com/originals/d8/a7/22/d8a722877a4f2ece02b012ddee6e1685.jpg",
+        "width": 680, "height": 411}}, "counts": {"likes": 1, "comments": 0, "repins":
+        0}, "id": "414049759476182583"}, {"attribution": null, "creator": {"username":
+        "quazix", "bio": "", "first_name": "Sheila", "last_name": "Lasher", "created_at":
+        "2013-06-08T01:55:55", "image": {"60x60": {"url": "https://s-media-cache-ak0.pinimg.com/avatars/quazix_1480827587_60.jpg",
+        "width": 60, "height": 60}}, "counts": {"pins": 10705, "following": 70, "followers":
+        74, "boards": 67, "likes": 184}, "id": "527273206281678819"}, "url": "https://www.pinterest.com/pin/527273068859004010/",
+        "media": {"type": "image"}, "created_at": "2016-12-26T01:58:11", "note": "Chartreux",
+        "color": "#d1d6e5", "link": "https://www.pinterest.com/r/pin/527273068859004010/4878490596204882047/c0f3582885688f65229e81b4c69cb361b64d4ee72656c6aee95c03a2c631ca79",
+        "board": {"description": "", "creator": {"id": "527273206281678819"}, "url":
+        "https://www.pinterest.com/quazix/cats/", "created_at": "2016-11-17T01:25:47",
+        "image": {"60x60": {"url": "https://s-media-cache-ak0.pinimg.com/60x60/56/f6/44/56f64409391612c5c20d921093c4ddd4.jpg",
+        "width": 60, "height": 60}}, "counts": {"pins": 105, "collaborators": 0, "followers":
+        21}, "id": "527273137562696876", "name": "Cats"}, "image": {"original": {"url":
+        "https://s-media-cache-ak0.pinimg.com/originals/8d/e4/99/8de499cfcd21850ccf319c45904fd6a9.jpg",
+        "width": 680, "height": 433}}, "counts": {"likes": 1, "comments": 0, "repins":
+        0}, "id": "527273068859004010"}], "page": {"cursor": "LT41MjcyNzMwNjg4NTkwMDQwMTA6MnxmYWJkMDlhOGI4MmQ3ZTJmNGZhM2ZjMTQ2Y2UwOTdkZTI2ZTA1NmRjYzZhZWQ3NTJlODFhNjBmNThhYzEwNjkw",
+        "next": "https://api.pinterest.com/v1/me/likes/?cursor=LT41MjcyNzMwNjg4NTkwMDQwMTA6MnxmYWJkMDlhOGI4MmQ3ZTJmNGZhM2ZjMTQ2Y2UwOTdkZTI2ZTA1NmRjYzZhZWQ3NTJlODFhNjBmNThhYzEwNjkw&fields=id%2Clink%2Curl%2Ccreator%28id%2Cusername%2Cfirst_name%2Clast_name%2Cbio%2Ccreated_at%2Ccounts%2Cimage%29%2Cboard%28id%2Cname%2Curl%2Cdescription%2Ccreator%28id%2Cusername%2Cfirst_name%2Clast_name%2Cbio%2Ccreated_at%2Ccounts%2Cimage%29%2Ccreated_at%2Ccounts%2Cimage%29%2Ccreated_at%2Cnote%2Ccolor%2Ccounts%2Cmedia%2Cattribution%2Cimage&limit=2"}}'
+    http_version: 
+  recorded_at: Thu, 12 Jan 2017 12:39:17 GMT
+recorded_with: VCR 3.0.3
