@@ -1,9 +1,9 @@
 # pinterest-ruby
 
-[![Gem Version](https://badge.fury.io/rb/pinterest-ruby.png)](http://badge.fury.io/rb/pinterest-ruby)
-[![Dependency Status](https://gemnasium.com/ShogunPanda/pinterest-ruby.png?travis)](https://gemnasium.com/ShogunPanda/pinterest-ruby)
-[![Build Status](https://secure.travis-ci.org/ShogunPanda/pinterest-ruby.png?branch=master)](http://travis-ci.org/ShogunPanda/pinterest-ruby)
-[![Coverage Status](https://coveralls.io/repos/github/ShogunPanda/pinterest-ruby/badge.svg?branch=master)](https://coveralls.io/github/ShogunPanda/pinterest-ruby?branch=master)
+[![Gem Version](https://img.shields.io/gem/v/pinterest-ruby.svg)](https://rubygems.org/gems/pinterest-ruby)
+[![Dependency Status](https://img.shields.io/gemnasium/ShogunPanda/pinterest-ruby.svg)](https://gemnasium.com/ShogunPanda/pinterest-ruby)
+[![Build Status](https://img.shields.io/travis/ShogunPanda/pinterest-ruby.svg)](http://travis-ci.org/ShogunPanda/pinterest-ruby)
+[![Coverage Status](https://img.shields.io/coveralls/github/ShogunPanda/pinterest-ruby.svg)](https://coveralls.io/github/ShogunPanda/pinterest-ruby)
 
 A tiny JSON API framework for Ruby on Rails.
 
@@ -73,4 +73,4 @@ The API documentation can be found [here](https://sw.cowtech.it/pinterest-ruby/d
 
 Copyright (C) 2017 and above Shogun <shogun@cowtech.it>.
 
-Licensed under the MIT license, which can be found at http://opensource.org/licenses/MIT.
+Licensed under the MIT license, which can be found at https://choosealicense.com/licenses/mit.
