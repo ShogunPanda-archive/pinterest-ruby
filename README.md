@@ -1,21 +1,8 @@
 # pinterest-ruby
 
-[![Gem Version](https://img.shields.io/gem/v/pinterest-ruby.svg)](https://rubygems.org/gems/pinterest-ruby)
-[![Dependency Status](https://img.shields.io/gemnasium/ShogunPanda/pinterest-ruby.svg)](https://gemnasium.com/ShogunPanda/pinterest-ruby)
-[![Build Status](https://img.shields.io/travis/ShogunPanda/pinterest-ruby.svg)](http://travis-ci.org/ShogunPanda/pinterest-ruby)
-[![Coverage Status](https://img.shields.io/coveralls/github/ShogunPanda/pinterest-ruby.svg)](https://coveralls.io/github/ShogunPanda/pinterest-ruby)
+## END OF DEVELOPMENT NOTICE - This gem has been discontinued
 
 A tiny JSON API framework for Ruby on Rails.
-
-https://sw.cowtech.it/pinterest-ruby
-
-## END OF DEVELOPMENT NOTICE
-
-# This gem has been discontinued.
-
-# Introduction
-
-Pinterest API wrapper.
 
 ## Usage
 
